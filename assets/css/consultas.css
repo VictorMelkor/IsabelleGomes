@@ -1,0 +1,189 @@
+/* =========================
+   CS - CONSULTAS
+========================= */
+
+/* Seção (ID já no HTML: #consultas) */
+#consultas {
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+}
+
+/* Header da seção */
+.cs-header {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.cs-categoria {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-terra-cotta);
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.cs-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-navy);
+}
+
+.cs-descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-navy);
+    margin: 0 auto;
+    max-width: 60ch;
+}
+
+/* Grid de consultas - mobile first (1 coluna) */
+.cs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    width: 100%;
+}
+
+/* Card */
+.cs-card {
+    background: none;
+    border-radius: 0 20px 0 20px;
+    border: 1px solid var(--color-navy);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cs-card:hover,
+.cs-card:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cs-card-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-navy);
+    margin: 0;
+}
+
+/* =========================
+   BF - BENEFÍCIOS
+========================= */
+
+#beneficios {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-green);
+    color: var(--color-navy);
+    text-align: center;
+}
+
+.bf-header {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.bf-categoria {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.bf-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-navy);
+}
+
+.bf-descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-navy);
+    margin: 0 auto;
+    max-width: 60ch;
+}
+
+/* Lista de benefícios */
+.bf-list {
+    list-style: none;
+    margin: var(--spacing-lg) auto 0;
+    padding: 0;
+    max-width: 700px;
+    text-align: left;
+}
+
+.bf-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-navy);
+}
+
+/* Check icon com pseudo-elemento */
+.bf-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 1rem;
+    color: var(--color-navy);
+    font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets - 600px+ (37.5em) -> 2 colunas */
+@media (min-width: 37.5em) {
+    .cs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .cs-titulo,
+    .bf-titulo {
+        font-size: 1.75rem;
+    }
+}
+
+/* Desktops - 900px+ (56.25em) -> 3 colunas */
+@media (min-width: 56.25em) {
+    .cs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .cs-titulo,
+    .bf-titulo {
+        font-size: 2rem;
+    }
+}
+
+/* Monitores grandes - 1200px+ (75em) */
+@media (min-width: 75em) {
+    .cs-titulo,
+    .bf-titulo {
+        font-size: 2.25rem;
+    }
+
+    .cs-card-content {
+        font-size: 1rem;
+    }
+
+    .bf-list li {
+        font-size: 1.125rem;
+    }
+}

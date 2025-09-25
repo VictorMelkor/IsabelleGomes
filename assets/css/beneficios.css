@@ -1,0 +1,222 @@
+/* =========================
+   BF - BENEFÍCIOS
+========================= */
+
+/* Seção (ID já no HTML: #beneficios) */
+#beneficios {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-green);
+    color: var(--color-navy);
+}
+
+/* Wrapper geral (texto + imagem) */
+.bf-wrapper {
+    display: flex;
+    flex-direction: column; /* mobile first */
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+/* Coluna de conteúdo */
+.bf-conteudo {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+/* Header da seção */
+.bf-header {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.bf-categoria {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.bf-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-navy);
+}
+
+.bf-descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-navy);
+    margin: 0 auto;
+    max-width: 60ch;
+}
+
+/* Lista de benefícios */
+.bf-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-lg) auto 0;
+    max-width: 60ch;
+    text-align: left;
+}
+
+.bf-list li {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+/* Marcador customizado */
+.bf-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--color-navy);
+    font-weight: bold;
+}
+
+/* Coluna imagem */
+.bf-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   GRID DE CARDS (opcional)
+========================= */
+.bf-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    width: 100%;
+}
+
+.bf-card {
+    background: none;
+    border-radius: 0 20px 0 20px;
+    border: 1px solid var(--color-navy);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.bf-card:hover,
+.bf-card:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.bf-card-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.bf-card-icon svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    fill: var(--color-navy);
+}
+
+.bf-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-green);
+}
+
+.bf-card-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-navy);
+    margin: 0;
+}
+
+/* Botões opcionais */
+.bf-buttons {
+    margin-top: var(--spacing-xl);
+}
+
+.bf-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: var(--color-navy);
+    color: var(--color-bg);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.bf-button:hover,
+.bf-button:focus {
+    background-color: var(--color-green);
+    transform: translateY(-4px);
+}
+
+/* Coluna imagem */
+.bf-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.bf-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Desktops - 900px+ */
+@media (min-width: 56.25em) {
+    .bf-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: var(--spacing-xl);
+    }
+
+    .bf-conteudo {
+        flex: 1.2; /* dá mais peso ao texto */
+        text-align: left;
+    }
+
+    .bf-imagem {
+        flex: 0 0 40%; /* imagem limitada a 40% da largura */
+    }
+
+    .bf-imagem img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain; /* garante proporção correta */
+    }
+
+    .bf-header {
+        text-align: left;
+        margin: 0 0 var(--spacing-lg);
+    }
+
+    .bf-titulo {
+        font-size: 2rem;
+    }
+
+    .bf-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+}

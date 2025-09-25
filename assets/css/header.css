@@ -1,0 +1,181 @@
+/* =========================
+   HEADER - GLASS EFFECT
+========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: var(--spacing-lg);
+    width: 100vw;
+    z-index: 1000;
+    background-color: var(--color-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.116);
+}
+
+
+/* =========================
+   NAVBAR MOBILE-FIRST
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1rem;
+}
+
+.logo {
+    color: var(--color-navy);
+    max-height: 90px;
+}
+
+/* =========================
+   MENU BASE (MOBILE)
+========================= */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0; /* menu fixo à esquerda */
+    width: 80%;           /* ocupa 80% da largura da tela */
+    height: 100vh;        /* altura total da tela */
+    background-color:var(--color-navy);
+    backdrop-filter: blur(8px); /* vidro fosco */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    transform: translateX(-100%); /* escondido fora da tela à esquerda */
+    transition: transform 0.5s ease-in-out; /* animação suave */
+    box-shadow: 2px 0 8px rgba(0,0,0,0.35); /* sombra à direita */
+    z-index: 999;
+}
+
+/* Menu aberto */
+.menu.show {
+    transform: translateX(0); /* desliza suavemente para dentro da tela */
+    background-color: var(--color-navy);
+}
+
+/* =========================
+   LINKS DO MENU
+========================= */
+.menu li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: var(--color-navy);
+}
+
+
+.menu a {
+    font-size: 1.2rem;
+}
+
+.menu li a {
+    padding: 0.5rem 1rem;
+    color: var(--color-bg);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.menu li a:hover,
+.menu li a:focus {
+    color: var(--color-rose);
+    outline: none;
+    
+}
+
+.menu a.active {
+    border-bottom: 3px solid var(--color-rose);
+    color: var(--color-rose);
+    font-weight: bold;
+    border-radius: 0;
+}
+
+/* Botão do menu */
+.menu-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-navy);
+    
+}
+
+
+
+/* =========================
+   MEDIA QUERIES - DESKTOPS
+========================= */
+
+@media (min-width: 768px) {
+    .menu {
+        width: 40%;
+    }
+
+    .menu-toggle {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets e desktops */
+@media (min-width: 900px) {
+    /* Menu horizontal padrão desktop */
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        backdrop-filter: none;
+        gap: 1rem;
+        transform: none;
+        box-shadow: none;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Mostrar sempre menu no desktop */
+    .menu.show {
+        right: auto;
+    }
+
+    /* Esconder botão de menu em telas grandes */
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-logo {
+        display: none;
+    }
+
+    .menu li {
+        padding: 0 0;
+    }
+
+    .menu a {
+    font-size: 0.8rem;
+}
+
+    .menu li a {
+        color: var(--color-navy);
+    }
+
+.menu a.active {
+    border-bottom: 3px solid var(--color-navy);
+    color: var(--color-navy);
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.menu a:hover {
+    border-bottom: 3px solid var(--color-green);
+    color: var(--color-green);
+    
+}
+
+}
