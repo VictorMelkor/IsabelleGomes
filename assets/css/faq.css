@@ -1,0 +1,84 @@
+/* =========================
+   FAQ - DÚVIDAS FREQUENTES
+========================= */
+
+#faq {
+    position: relative;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+    padding-bottom: 5rem;
+}
+
+.faq-wrapper {
+    max-width: 800px;
+    margin: 5rem auto;
+}
+
+.faq-categoria {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.faq-titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Accordion */
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-navy);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: var(--spacing-md) 0;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: var(--color-navy);
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.25rem;
+    transition: transform var(--transition-fast);
+}
+
+.faq-question[aria-expanded="true"]::after {
+    content: "−";
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-fast) ease;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-navy);
+    padding-left: 0.5rem;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 300px;
+    padding-bottom: var(--spacing-md);
+}
+
+

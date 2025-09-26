@@ -1,0 +1,137 @@
+/* =========================
+   CTA MEIO - SEÇÃO
+========================= */
+
+#cta-meio {
+    position: relative;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-navy);
+    color: var(--color-bg);
+    padding-top: 5rem;
+}
+
+.cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Agrupando texto + botão */
+.cta-text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+/* Frase */
+.cta-frase {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--color-bg);
+}
+
+/* Imagem */
+.cta-image img {
+    max-width: 220px;
+    object-fit: cover;
+    border-radius: 20px 0 20px 0;
+}
+
+/* Botão */
+.cta-button .button {
+    background-color: var(--color-green);
+    color: var(--color-navy);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: 0 20px 0 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cta-button .button:hover {
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+    font-weight: 700;
+}
+
+
+.custom-shape-divider-top-1758920272 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1758920272 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-top-1758920272 .shape-fill {
+    fill: var(--color-navy);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1758920272 svg {
+        width: calc(105% + 1.3px);
+        height: 55px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1758920272 svg {
+        width: calc(105% + 1.3px);
+        height: 39px;
+    }
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets - 768px+ */
+@media (min-width: 768px) {
+    .cta-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .cta-text-button {
+        flex: 1;
+        align-items: center;
+    }
+
+    .cta-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta-frase {
+        font-size: 1.75rem;
+    }
+}
+
+/* Desktops - 1024px+ */
+@media (min-width: 1024px) {
+    .cta-frase {
+        font-size: 2rem;
+    }
+
+    .cta-image img {
+        max-width: 300px;
+    }
+}

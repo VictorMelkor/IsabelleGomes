@@ -1,0 +1,160 @@
+/* =========================
+   FT - FOOTER
+========================= */
+
+#footer {
+    background-color: var(--color-navy);
+    color: var(--color-bg);
+    padding: var(--spacing-lg) var(--spacing-md);
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   Footer Left
+========================= */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-height: fit-content;
+    margin-bottom: var(--spacing-md);
+    margin: auto auto;
+}
+
+.footer-text {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-cta.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--color-green);
+    color: var(--color-navy);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    white-space: nowrap;  /* impede quebra de linha */
+}
+
+.footer-cta.button:hover,
+.footer-cta.button:focus {
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+    transform: translateY(-3px);
+    font-weight: 700;
+}
+
+/* =========================
+   Footer Right
+========================= */
+.footer-right {
+    display: flex;
+    flex: 1 1 300px;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    min-width: 250px;
+    max-height: fit-content;
+    text-align: center;
+}
+
+.footer-col h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-green);
+}
+
+.footer-col p,
+.footer-col a {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-bg);
+    font-size: 0.9rem;
+}
+
+.footer-col a {
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-col a:hover {
+    color: var(--color-navy);
+}
+
+/* =========================
+   Footer Bottom
+========================= */
+.footer-bottom {
+    margin-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: var(--spacing-sm);
+    font-size: 0.825rem;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+.footer-bottom .ft-copy,
+.footer-bottom .ft-dev {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-bg);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 768px) {
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .footer-left {
+        align-items: center;
+        text-align: center;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .footer-left a {
+        margin: auto auto;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .footer-cta.button {
+        width: auto;        /* deixa ocupar apenas o espaço necessário */
+        min-width: 0;
+    }
+
+    .footer-text {
+        width: 90%;
+        margin: 0 auto 1rem auto;
+    }
+}

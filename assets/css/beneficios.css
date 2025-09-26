@@ -4,9 +4,12 @@
 
 /* Seção (ID já no HTML: #beneficios) */
 #beneficios {
+    position: relative;
     padding: var(--spacing-xl) var(--spacing-md);
     background-color: var(--color-green);
     color: var(--color-navy);
+    padding-top: 10rem;
+    padding-bottom: 3rem;
 }
 
 /* Wrapper geral (texto + imagem) */
@@ -84,8 +87,9 @@
 .bf-imagem img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 40px 0 40px 0;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    margin: auto auto;
 }
 
 /* =========================
@@ -151,8 +155,9 @@
 .bf-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 0 20px 0 20px;
     font-weight: 600;
+    text-align: center;
     background-color: var(--color-navy);
     color: var(--color-bg);
     transition: background-color var(--transition-fast), transform var(--transition-fast);
@@ -160,8 +165,10 @@
 
 .bf-button:hover,
 .bf-button:focus {
-    background-color: var(--color-green);
+    background-color: var(--color-bg);
     transform: translateY(-4px);
+    font-weight: 700;
+
 }
 
 /* Coluna imagem */
@@ -174,8 +181,28 @@
 .bf-imagem img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 40 0 40px 0;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.custom-shape-divider-top-1758918222 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1758918222 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 93px;
+}
+
+.custom-shape-divider-top-1758918222 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* =========================
@@ -186,7 +213,7 @@
 @media (min-width: 56.25em) {
     .bf-wrapper {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         gap: var(--spacing-xl);
     }

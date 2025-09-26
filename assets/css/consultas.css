@@ -4,6 +4,7 @@
 
 /* Seção (ID já no HTML: #consultas) */
 #consultas {
+    position: relative;
     padding: var(--spacing-xl) var(--spacing-md);
     text-align: center;
     background-color: var(--color-bg);
@@ -19,7 +20,7 @@
 .cs-categoria {
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--color-terra-cotta);
+    color: var(--color-green);
     letter-spacing: 1px;
     margin-bottom: var(--spacing-sm);
     text-transform: uppercase;
@@ -67,7 +68,7 @@
 }
 
 .cs-card-content {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: var(--color-navy);
     margin: 0;
@@ -140,6 +141,43 @@
     font-size: 1rem;
     color: var(--color-navy);
     font-weight: bold;
+}
+
+.custom-shape-divider-top-1758920433 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1758920433 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-top-1758920433 .shape-fill {
+    fill: var(--color-bg);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1758920433 svg {
+        width: calc(105% + 1.3px);
+        height: 55px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1758920433 svg {
+        width: calc(105% + 1.3px);
+        height: 39px;
+    }
 }
 
 /* =========================

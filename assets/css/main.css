@@ -75,7 +75,7 @@ table {
     --color-bg: var(--color-white);
 
     /* TIPOGRAFIA */
-    --font-primary: 'Nunito', sans-serif;
+    --font-primary: 'Montserrat', sans-serif;
     --font-text: 'Nunito', sans-serif;
 
     /* ESPAÇAMENTOS */
@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-navy);
     line-height: 1.2;
     margin-bottom: var(--spacing-md);
+    
 }
 
 p, li, span, a, button, input, textarea, select {
@@ -130,12 +131,7 @@ button {
     font-weight: 600;
 }
 
-button:hover, button:focus {
-    background-color: var(--color-green);
-    color: var(--color-navy);
 
-    outline-offset: 2px;
-}
 
 input, textarea, select {
     border: 1px solid var(--color-gray);

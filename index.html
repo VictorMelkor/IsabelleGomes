@@ -24,8 +24,11 @@
     <!-- Preconnect / Preload para Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"
-        media="print" onload="this.media='all'">
+    <!-- Fonts: Nunito e Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+
 
     <!-- CSS Principal -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -36,6 +39,7 @@
     <link rel="stylesheet" href="assets/css/resultados.css">
     <link rel="stylesheet" href="assets/css/abordagem.css">
     <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/cta.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -62,7 +66,7 @@
     <header>
         <nav class="navbar  flex flex-center">
             <!-- Logo visível sempre -->
-            <a href="#" class="logo">Isabelle Gomes Nutri</a>
+            <a href="#" class="logo"><img src="assets/images/logo-escura.png" alt=""></a>
 
             <!-- Botão toggle -->
             <button class="menu-toggle" aria-label="Abrir menu">☰</button>
@@ -71,14 +75,15 @@
             <ul class="menu flex">
                 <!-- Logo só aparece no mobile -->
                 <li class="menu-logo">
-                    <a href="#hero" class="logo">Isabelle Gomes Nutri</a>
+                    <a href="#hero" class="logo"><img src="assets/images/logo-clara.png" alt=""></a>
                 </li>
                 <li><a href="#hero">Início</a></li>
-                <li><a href="#services">Como funciona</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#consultas">Como funciona</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#cta">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -93,21 +98,22 @@
 
         <!-- Conteúdo: título, textos e botões -->
         <div class="hero-content flex flex-column flex-center animate-section fade-up" data-animate="fade-up">
-            <h1>Nutrição sem terrorismo, com resultados reais</h1>
+            <h1>Conquiste o corpo e a energia que você merece</h1>
 
             <p>
-                Acompanhamento profissional para <strong>emagrecimento</strong>,
-                <strong>hipertrofia</strong> e <strong>reeducação alimentar</strong>,
-                com saúde e equilíbrio.
+                Transforme sua alimentação e conquiste <strong>emagrecimento</strong>,
+                <strong>ganho de massa</strong> ou <strong>equilíbrio alimentar</strong>
+                sem dietas radicais, com acompanhamento profissional e focado na sua saúde.
             </p>
 
             <div class="hero-buttons flex flex-wrap gap-sm mt-md animate-section fade-up" data-animate="fade-up">
                 <a href="https://wa.me/558586450979" class="cta-whatsapp button" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Agende sua consulta
+                    <i class="fab fa-whatsapp"></i> Comece sua transformação
                 </a>
             </div>
         </div>
     </section>
+
 
     <!-- Consultas -->
     <section id="consultas">
@@ -115,11 +121,12 @@
 
             <!-- Título e descrição -->
             <div class="cs-header text-center animate-section fade-left" data-animate="fade-left">
-                <h2 class="cs-categoria">CONSULTA</h2>
-                <h2 class="cs-titulo">Como funciona o acompanhamento?</h2>
+                <h2 class="cs-categoria">COMO FUNCIONA</h2>
+                <h2 class="cs-titulo">Acompanhe sua nutrição de forma personalizada</h2>
                 <p class="cs-descricao">
-                    Cada consulta é personalizada para entender sua rotina, ajustar estratégias e garantir resultados
-                    sustentáveis. Confira o que está incluso no acompanhamento.
+                    Cada acompanhamento é planejado para <strong>entender sua rotina</strong>,
+                    <strong>ajustar estratégias eficazes</strong> e garantir <strong>resultados duradouros</strong>.
+                    Descubra tudo o que está incluso no seu acompanhamento nutricional.
                 </p>
             </div>
 
@@ -127,47 +134,59 @@
             <div class="cs-grid">
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Avaliação completa da sua rotina alimentar e objetivos.
+                        Avaliação detalhada da sua alimentação, hábitos e objetivos para criar um plano realista.
                     </p>
                 </article>
 
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Estratégias específicas para recomposição corporal e desempenho físico.
+                        Estratégias específicas para <strong>perda de gordura</strong>, <strong>ganho de massa</strong>
+                        e
+                        <strong>desempenho físico</strong>.
                     </p>
                 </article>
 
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Plano alimentar adaptado à sua realidade e necessidades.
+                        Plano alimentar totalmente adaptado à sua rotina e preferências, sem abrir mão do prazer de
+                        comer.
                     </p>
                 </article>
 
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Acompanhamento para ajustes e otimização dos resultados.
+                        Acompanhamento contínuo para ajustes estratégicos e otimização dos seus resultados.
                     </p>
                 </article>
 
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Identificação do estado nutricional e ajustes personalizados.
+                        Monitoramento do seu estado nutricional com ajustes personalizados conforme evolução.
                     </p>
                 </article>
 
                 <article class="cs-card animate-section fade-up" data-animate="fade-up">
                     <p class="cs-card-content">
-                        Comparação de progresso e evolução ao longo do acompanhamento.
+                        Comparação de progresso e evolução, mostrando resultados visíveis e motivadores ao longo do
+                        acompanhamento.
                     </p>
                 </article>
             </div>
 
-        </div>
+
     </section>
 
 
     <!-- Benefícios -->
     <section id="beneficios">
+        <div class="custom-shape-divider-top-1758920433">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+        </div>
+
+
         <div class="container bf-wrapper">
 
             <!-- Coluna texto -->
@@ -175,34 +194,42 @@
                 <!-- Título e descrição -->
                 <div class="bf-header text-center animate-section fade-left" data-animate="fade-left">
                     <h2 class="bf-categoria">BENEFÍCIOS</h2>
-                    <h2 class="bf-titulo">Por que iniciar seu acompanhamento nutricional?</h2>
+                    <h2 class="bf-titulo">O que você conquista com acompanhamento nutricional?</h2>
                     <p class="bf-descricao">
-                        Um acompanhamento profissional pode transformar seus hábitos, saúde e resultados físicos.
-                        Veja alguns benefícios que você pode conquistar.
+                        Um acompanhamento profissional, personalizado e baseado em ciência, pode transformar seus
+                        hábitos,
+                        sua saúde e seus resultados físicos de forma sustentável. Veja alguns benefícios que você pode
+                        alcançar:
                     </p>
                 </div>
 
                 <!-- Lista de benefícios -->
                 <ul class="bf-list">
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Melhora da energia diária e disposição para suas atividades.
+                        Mais energia e disposição para suas atividades do dia a dia.
                     </li>
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Redução do peso de forma saudável e sustentável, sem dietas extremas.
+                        Redução de peso saudável, sem dietas radicais ou restritivas.
                     </li>
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Fortalecimento muscular e manutenção da massa magra.
+                        Fortalecimento muscular e preservação da massa magra.
                     </li>
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Melhoria da digestão e equilíbrio intestinal, promovendo bem-estar.
+                        Digestão equilibrada e sensação de bem-estar contínuo.
                     </li>
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Educação alimentar e autonomia para escolhas saudáveis.
+                        Educação alimentar para fazer escolhas saudáveis com autonomia.
                     </li>
                     <li class="animate-section fade-up" data-animate="fade-up">
-                        Redução de riscos de doenças crônicas e melhora metabólica.
+                        Redução do risco de doenças crônicas e melhora do metabolismo.
                     </li>
                 </ul>
+
+                <div class="hero-buttons flex flex-wrap gap-sm mt-md animate-section fade-up" data-animate="fade-up">
+                    <a href="https://wa.me/558586450979" class="cta-whatsapp bf-button" target="_blank">
+                        Quero mudar <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
             </div>
 
             <!-- Coluna imagem -->
@@ -211,128 +238,399 @@
             </div>
 
         </div>
+
+
     </section>
 
 
-    <!-- Resultados -->
-    <section id="resultados">
-    <div class="container flex flex-column">
+    <!-- Depoimentos -->
+    <section id="depoimentos">
+        <div class="custom-shape-divider-top-1758920536">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
 
-        <!-- Header -->
-        <div class="res-header text-center animate-section fade-up" data-animate="fade-up">
-            <h2 class="res-categoria">RESULTADOS</h2>
-            <h2 class="res-titulo">Portfólio de Resultados</h2>
-            <p class="res-descricao">
-                Conheça alguns dos resultados alcançados com os planos personalizados e acompanhamento nutricional.
-            </p>
-        </div>
+        <div class="container">
 
-        <!-- Filtros -->
-        <ul class="res-filtros animate-section fade-up" data-animate="fade-up">
-            <li class="ativo" data-filter="*">Todos</li>
-            <li data-filter="transformacao">Transformações</li>
-            <li data-filter="planos">Planos Alimentares</li>
-            <li data-filter="esportiva">Nutrição Esportiva</li>
-        </ul>
-
-        <!-- Grid estilo Masonry -->
-        <div class="res-grid animate-section fade-up" data-animate="fade-up">
-
-            <!-- Card -->
-            <div class="res-card transformacao">
-                <img src="assets/images/transformacao-1.jpg" alt="Transformação - Emagrecimento">
-                <div class="res-info">
-                    <h4>Transformação - Emagrecimento</h4>
-                    <p>Paciente eliminou 10kg com plano equilibrado e acompanhamento mensal.</p>
-                </div>
+            <div class="dep-header text-center">
+                <h2 class="dep-categoria">DEPOIMENTOS</h2>
+                <h2 class="dep-titulo">Transformações reais dos meus pacientes</h2>
+                <p class="dep-descricao">
+                    Descubra como nosso acompanhamento nutricional ajuda pessoas a conquistarem saúde, energia e
+                    bem-estar.
+                </p>
             </div>
 
-            <div class="res-card planos">
-                <img src="assets/images/plano-1.jpg" alt="Plano Detox">
-                <div class="res-info">
-                    <h4>Plano Detox</h4>
-                    <p>Foco na desintoxicação do organismo e melhora da disposição.</p>
-                </div>
-            </div>
+            <!-- Swiper -->
+            <div class="swiper dep-swiper">
+                <div class="swiper-wrapper">
 
-            <div class="res-card esportiva">
-                <img src="assets/images/esporte-1.jpg" alt="Consulta Online - Performance">
-                <div class="res-info">
-                    <h4>Consulta Online - Performance</h4>
-                    <p>Atendimento remoto para atletas com ajuste de macronutrientes.</p>
-                </div>
-            </div>
+                    <!-- Card 1 -->
+                    <div class="swiper-slide dep-card">
+                        <img src="assets/images/esporte-1.jpg" alt="Cliente 1" class="dep-img">
+                        <div class="dep-content">
+                            <p class="dep-texto">
+                                “O acompanhamento me ajudou a conquistar meus objetivos de forma saudável, sem dietas
+                                extremas, e com resultados que realmente duram.”
+                            </p>
+                            <h4>Mariana Silva</h4>
+                            <span>Cliente online</span>
+                        </div>
+                    </div>
 
-            <div class="res-card transformacao">
-                <img src="assets/images/tranformacao-2.jpg" alt="Transformação - Massa Magra">
-                <div class="res-info">
-                    <h4>Transformação - Massa Magra</h4>
-                    <p>Plano para ganho de massa magra aliado a treino funcional.</p>
-                </div>
-            </div>
+                    <!-- Card 2 -->
+                    <div class="swiper-slide dep-card">
+                        <img src="assets/images/plano2.jpg" alt="Cliente 2" class="dep-img">
+                        <div class="dep-content">
+                            <p class="dep-texto">
+                                “Perdi peso, ganhei energia e aprendi a me alimentar de forma prática e prazerosa no dia
+                                a dia.”
+                            </p>
+                            <h4>João Pereira</h4>
+                            <span>Cliente presencial</span>
+                        </div>
+                    </div>
 
-            <div class="res-card planos">
-                <img src="assets/images/plano2.jpg" alt="Plano Low Carb">
-                <div class="res-info">
-                    <h4>Plano Low Carb</h4>
-                    <p>Redução de gordura corporal com preservação da energia diária.</p>
-                </div>
-            </div>
+                    <!-- Card 3 -->
+                    <div class="swiper-slide dep-card">
+                        <img src="assets/images/tranformacao-2.jpg" alt="Cliente 3" class="dep-img">
+                        <div class="dep-content">
+                            <p class="dep-texto">
+                                “Antes eu vivia em efeito sanfona. Hoje encontrei equilíbrio alimentar e consigo manter
+                                meus resultados com leveza.”
+                            </p>
+                            <h4>Ana Costa</h4>
+                            <span>Cliente online</span>
+                        </div>
+                    </div>
 
-            <div class="res-card esportiva">
-                <img src="assets/images/esporte-2.jpg" alt="Consulta Online - Reeducação Alimentar">
-                <div class="res-info">
-                    <h4>Consulta Online - Reeducação Alimentar</h4>
-                    <p>Suporte contínuo e ajustes semanais para novos hábitos alimentares.</p>
-                </div>
-            </div>
+                    <!-- Card 4 -->
+                    <div class="swiper-slide dep-card">
+                        <img src="assets/images/transformacao-1.jpg" alt="Cliente 4" class="dep-img">
+                        <div class="dep-content">
+                            <p class="dep-texto">
+                                “Aprendi a comer bem sem abrir mão do que gosto. Meu dia a dia ficou mais saudável e
+                                prazeroso.”
+                            </p>
+                            <h4>Pedro Almeida</h4>
+                            <span>Plano personalizado</span>
+                        </div>
+                    </div>
 
-            <div class="res-card transformacao">
-                <img src="assets/images/transformacao-3.jpg" alt="Transformação - Pós-Parto">
-                <div class="res-info">
-                    <h4>Transformação - Pós-Parto</h4>
-                    <p>Plano seguro para mães no retorno ao peso saudável após gestação.</p>
                 </div>
-            </div>
 
-            <div class="res-card planos">
-                <img src="assets/images/plano3.jpg" alt="Plano Vegano">
-                <div class="res-info">
-                    <h4>Plano Vegano</h4>
-                    <p>Plano nutricional balanceado para vegetarianos e veganos.</p>
-                </div>
-            </div>
-
-            <div class="res-card esportiva">
-                <img src="assets/images/esporte-3.jpg" alt="Consulta Online - Manutenção">
-                <div class="res-info">
-                    <h4>Consulta Online - Manutenção</h4>
-                    <p>Acompanhamento para manutenção de resultados e ajustes periódicos.</p>
-                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
             </div>
 
         </div>
+        <div class="custom-shape-divider-bottom-1758919517">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+    </section>
+
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="sobre-wrapper flex flex-column flex-center">
+
+            <!-- Conteúdo textual -->
+            <div class="sobre-content animate-section fade-right" data-animate="fade-right">
+                <p class="sobre-categoria">SOBRE MIM</p>
+                <h2 class="sobre-titulo">Isabelle Gomes</h2>
+                <span>CRN-11 22140/P</span>
+
+                <p class="sobre-texto">
+                    Acredito que a nutrição vai muito além de dietas restritivas.
+                    Meu compromisso é oferecer um acompanhamento baseado em ciência,
+                    equilíbrio e escolhas possíveis para o dia a dia, ajudando você a conquistar saúde, energia e
+                    bem-estar.
+                </p>
+
+                <p class="sobre-texto">
+                    Atuo em processos de <strong>emagrecimento</strong>, <strong>hipertrofia</strong> e
+                    <strong>reeducação alimentar</strong>,
+                    sempre respeitando a individualidade de cada pessoa e criando planos que se encaixam perfeitamente
+                    na sua rotina e objetivos.
+                </p>
+
+                <p class="sobre-texto destaque">
+                    Minha missão é te ajudar a dar o primeiro passo rumo a uma vida mais leve, saudável e sem culpa —
+                    mostrando que a nutrição pode ser prática, acessível e transformadora, com resultados que você sente
+                    e vê no dia a dia.
+                </p>
+            </div>
+
+            <!-- Foto -->
+            <div class="sobre-image animate-section fade-left" data-animate="fade-left">
+                <img src="assets/images/hero.png" alt="Nutricionista Isabelle Gomes - CRN-11 22140/P">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+<!-- CTA Meio -->
+<section id="cta-meio">
+    <!-- Shape divider existente -->
+    <div class="custom-shape-divider-top-1758919582">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <div class="cta-wrapper">
+
+        <!-- Coluna de texto + botão -->
+        <div class="cta-text-button animate-section fade-right" data-animate="fade-right">
+            <h2 class="cta-frase">
+                Transforme sua alimentação, conquiste equilíbrio e resultados que você sente e vê no dia a dia.
+            </h2>
+            <div class="cta-button">
+                <a href="https://wa.me/5585988209392" class="button" target="_blank">
+                    Quero começar <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Coluna de imagem -->
+        <div class="cta-image animate-section fade-up" data-animate="fade-up">
+            <img src="assets/images/plano3.jpg" alt="Alimentação saudável e equilibrada" loading="lazy">
+        </div>
+
     </div>
 </section>
 
 
 
 
+    <!-- FAQ -->
+    <section id="faq">
+<div class="custom-shape-divider-top-1758920272">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+    </svg>
+</div>
 
+        <div class="faq-wrapper animate-section fade-up" data-animate="fade-up">
+            <p class="faq-categoria">Perguntas Frequentes</p>
+            <h2 class="faq-titulo">Dúvidas Comuns</h2>
 
+            <div class="faq-accordion">
 
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        O que acontece na primeira consulta?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Na primeira consulta, realizo uma avaliação completa da sua rotina, hábitos alimentares e
+                            histórico de saúde.
+                            Com base nisso, estruturamos um plano personalizado que conecta seus objetivos à sua
+                            realidade, garantindo
+                            que você alcance resultados de forma prática e sustentável.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        Vou precisar cortar todos os alimentos que gosto?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Não. Nosso foco é construir uma alimentação equilibrada e prazerosa.
+                            Respeitamos suas preferências, garantindo mudanças sustentáveis sem restrições radicais ou
+                            sensação de culpa.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        Em quanto tempo vou ver resultados?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Cada pessoa responde de forma diferente. Os resultados dependem do seu objetivo, ponto de
+                            partida e comprometimento.
+                            O mais importante é conquistar mudanças consistentes, saudáveis e duradouras, que você sente
+                            no dia a dia.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        As consultas podem ser online?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Sim. O atendimento online é seguro, prático e eficaz, oferecendo o mesmo acompanhamento
+                            personalizado do presencial.
+                            Ideal para quem busca flexibilidade sem abrir mão de resultados reais.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        Qual a duração das consultas?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Cada consulta dura cerca de 50 a 60 minutos, tempo suficiente para avaliação detalhada,
+                            ajustes do plano e orientação prática,
+                            garantindo que você saiba exatamente o que fazer para atingir seus objetivos.
+                        </p>
+                    </div>
+                </div>
 
-    <!-- Rodapé -->
-    <footer id="#footer" class="footer">
-        <p>© 2025 Nutricionista [Nome] — Todos os direitos reservados.</p>
+                <div class="faq-item animate-section fade-up" data-animate="fade-up">
+                    <button class="faq-question" aria-expanded="false">
+                        Você atende por convênios?
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            O atendimento é particular. Caso precise, podemos emitir nota fiscal para reembolso junto ao
+                            seu convênio,
+                            conforme as regras do seu plano de saúde.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                <div class="custom-shape-divider-bottom-1758920845">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+
+        <div class="contato-header animate-section fade-up" data-animate="fade-up">
+            <p class="ct-categoria">Contato</p>
+            <h2 class="ct-titulo">Atendimento personalizado para transformar sua alimentação e saúde</h2>
+        </div>
+
+        <div class="contato-wrapper">
+
+            <!-- Mapa -->
+            <div class="contato-mapa animate-section fade-left" data-animate="fade-left">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.422586626386!2d-49.2649736849423!3d-16.67893038812342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef7e85a2d3ebf%3A0x3e30c9e08c82a6db!2sGoi%C3%A2nia%2C%20GO%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1694918123456!5m2!1spt-BR!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Cartões + botão -->
+            <div class="contato-info animate-section fade-right" data-animate="fade-right">
+                <div class="ct-blocos">
+                    <!-- Atendimento Presencial -->
+                    <div class="ct-bloco">
+                        <h3>Presencial</h3>
+                        <p class="ct-endereco">
+                            Rua Exemplo, 123 – Setor Central<br>
+                            Goiânia, GO – CEP 74000-000<br>
+                            Atendimento seguro e personalizado no consultório.
+                        </p>
+                    </div>
+
+                    <!-- Atendimento Online -->
+                    <div class="ct-bloco">
+                        <h3>Online</h3>
+                        <p class="ct-endereco">
+                            Sessões via videochamada, flexíveis e adaptadas à sua rotina.<br>
+                            Mesmo acompanhamento completo do presencial.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Botão de Agendamento -->
+                <a href="https://wa.me/5585988209392" target="_blank" class="ct-button">
+                    <i class="fab fa-whatsapp"></i> Comece sua transformação
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="animate-section fade-up" data-animate="fade-up">
+        <div class="footer-main container flex flex-wrap flex-between">
+
+            <!-- Lado esquerdo -->
+            <div class="footer-left">
+                <a href="#hero"><img src="assets/images/logo-clara.png" alt="Logo Isabelle Gomes Nutricionista"></a>
+                <p class="footer-text">
+                    Invista na sua saúde e alcance resultados reais com acompanhamento nutricional profissional.
+                </p>
+                <a href="https://wa.me/5585986450979" class="footer-cta button" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Agende sua consulta
+                </a>
+            </div>
+
+            <!-- Lado direito -->
+            <div class="footer-right flex flex-wrap">
+                <!-- Contatos -->
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p>
+                        <a href="https://wa.me/5585986450979" target="_blank">
+                            <i class="fab fa-whatsapp"></i> (85) 98645-0979
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:isabellepgomes783@gmail.com">
+                            <i class="fas fa-envelope"></i> isabellepgomes783@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Atendimento online e presencial personalizado
+                    </p>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <p>
+                        <a href="https://www.instagram.com/isagomesnutri_?igsh=MWI5dzB6bXcyZXJ5aA%3D%3D&utm_source=qr"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé discreto -->
+        <div class="footer-bottom text-center">
+            <p class="ft-copy">&copy; 2025 Isabelle Gomes | Todos os direitos reservados</p>
+            <p class="ft-dev">Desenvolvido por Victor Melkor</p>
+        </div>
     </footer>
 
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/menu-toggle.js"></script>
     <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/animacoes.js"></script>
 </body>
 
 

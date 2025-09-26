@@ -36,7 +36,7 @@
    HERO CONTENT
 ========================= */
 .hero-content h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-navy);
     margin-bottom: var(--spacing-md);
@@ -45,7 +45,7 @@
 
 .hero-content p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--color-navy);
     margin: 0 0 var(--spacing-sm) 0;
     text-align: left; /* melhor leitura */
@@ -87,8 +87,9 @@
 .cta-sobre.button:focus {
     background-color: var(--color-green);
     transform: translateY(-5px);
-    color: var(--color-bg);
+    color: var(--color-navy);
     border: none;
+    font-weight: 700;
 }
 
 .cta-sobre.button {
@@ -111,6 +112,7 @@
         align-items: center;
         text-align: left;
         column-gap: var(--spacing-xl);
+        margin-top: 5rem;
     }
 
     .hero-content {
